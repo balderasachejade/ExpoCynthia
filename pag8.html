@@ -1,0 +1,74 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+            <link href="https://fonts.cdnfonts.com/css/la-unica" rel="stylesheet">
+            <link href="https://fonts.cdnfonts.com/css/the-bold-font" rel="stylesheet">
+        <title>p8</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+          .contenido .texto-presentacion {
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                color: rgb(0, 0, 0);
+                text-shadow: 1px 1px 2px rgb(0, 0, 0);
+                margin-bottom: 20px; 
+            } 
+            .img {
+            position:relative;
+            width: 40%;
+            height: 40%;
+            top: 45%; 
+            background: url('img/bio14.jpeg') no-repeat center center/cover;
+            }
+    
+                   
+    </style>
+    <body>
+        <header>
+            <div class="back">
+              <div class="menu container">
+                <a href="index.html" class="logo">Inicio</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                  <img src="img/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                  <ul>
+                    <li><a style="font-family: Arial, Helvetica, sans-serif;"href="pag7.html">Atras</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </header> 
+        <div class="contenido">
+        <div class="texto-presentacion">
+    <h1 style="color: rgb(0, 0, 0);"class="display-4">Formulario</h1>
+
+    <h2>Formulario de contacto</h2>
+    <form action="/submit_formulario" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+      
+      
+   
+     
+      
+    </body>
+    </html>
